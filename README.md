@@ -30,4 +30,4 @@
 上記を画像を表示させたい場所に記述します。
 
 ### var output = の規則について
-上記のソースの場合、`#ffce44`aa
+上記のソースの場合、`<img src="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/2/3/8/0/5/flowerA.jpg">`と出力されてしまう。
