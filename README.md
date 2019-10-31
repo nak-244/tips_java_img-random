@@ -7,3 +7,22 @@
 複数の画像ファイル群からランダムに1枚を選んで表示させるには、JavaScriptを使えば簡単です。表示候補の画像ファイルリストを事前に用意しておき、乱数を使って1つを選び出して表示させるようになります。
 
 必要なJavaScriptの処理は、下記の3点です。
+
+1. 表示候補の画像ファイルを配列に登録
+1. アクセスされるたびに乱数を使って1枚を選ぶ
+1. 選んだ画像1つだけをサイト上に表示
+
+## ソース
+
+~~~javascript
+<script type="text/javascript">
+   var imglist = new Array(
+      "flowerA.jpg",
+      "flowerB.jpg",
+      "flowerC.gif",
+      "flowerD.gif" );
+   var selectnum = Math.floor(Math.random() * imglist.length);
+   var output = "<img src=" + imglist[selectnum] + ">";
+   document.write(output);
+</script>
+~~~
