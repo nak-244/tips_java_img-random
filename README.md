@@ -54,4 +54,4 @@ document.write(output);
 `<img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png" id="mitarashi" class="korokoro" width="300">`
 
 
-* `var output`では、''(シングルクォーテーション)もしくは""(ダブルクォーテーション)でくくらなければならない。今回は出力内に""で囲う箇所がいくつかあったので、シングルクォーテーションから始めた。
+* `var output`では、''(シングルクォーテーション)もしくは""(ダブルクォーテーション)でくくらなければならない。今回は出力内に""で囲う箇所がいくつかあったので、シングルクォーテーションから使い始める必要があるので、注意。
