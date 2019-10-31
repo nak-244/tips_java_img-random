@@ -31,3 +31,21 @@
 
 ### var output = の規則について
 上記のソースの場合、`<img src="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/2/3/8/0/5/flowerA.jpg">`と出力されてしまう。
+
+imgにclassやidなどを付与したい場合は、下記のようにしなければならない。
+
+~~~javascript
+<script type="text/javascript">
+var imglist = new Array(
+"https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png",
+"https://www.olp.co.jp/jobsite_assets/img/sigotora/loading2.png",
+"https://www.olp.co.jp/jobsite_assets/img/sigotora/loading3.png",
+"https://www.olp.co.jp/jobsite_assets/img/sigotora/loading4.png" );
+var selectnum = Math.floor(Math.random() * imglist.length);
+var idtxt = "mitarashi";
+var classtxt = "korokoro";
+var widthtxt = "300";
+var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' + classtxt + '"\twidth="' + widthtxt + '">';
+document.write(output);
+</script>
+~~~
