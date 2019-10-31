@@ -26,3 +26,7 @@
    document.write(output);
 </script>
 ~~~
+
+上記を画像を表示させたい場所に記述します。
+
+### var output = "<img src=" + imglist[selectnum] + ">"; の規則について
