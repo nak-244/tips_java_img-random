@@ -49,3 +49,9 @@ var output = '<img src=' + imglist[selectnum] + '\tid="' + idtxt + '"\tclass="' 
 document.write(output);
 </script>
 ~~~
+
+出力html  
+`<img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/loading1.png" id="mitarashi" class="korokoro" width="300">`
+
+
+* `var output`では、''もしくは""でくくらなければならない。今回は
